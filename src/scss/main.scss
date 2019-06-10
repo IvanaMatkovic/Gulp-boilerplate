@@ -7,9 +7,21 @@
     'abstracts/mixins';
 
 //2.vendors
+@import
+    'vendors/bootstrap/bootstrap-reboot.scss',
+    'vendors/bootstrap/bootstrap.scss',
+    'vendors/bootstrap/bootstrap-grid.scss';
 
 //3.base stuff
 @import
     'base/base',
     'base/fonts',
     'base/typography';
+
+//4. layout related sections
+
+//5. components
+
+//6. page specific style
+
+//7. themes
