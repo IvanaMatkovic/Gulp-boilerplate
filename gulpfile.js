@@ -6,14 +6,14 @@ const
     newer = require('gulp-newer'),
     noop = require('gulp-noop'),
     htmlclean = require('gulp-htmlclean'),
-    sync = require('browser-sync'.create()),
+    sync = require('browser-sync').create(),
     sass = require('gulp-sass'),
-    concat = require('gulp-cancat'),
+    concat = require('gulp-concat'),
     terser = require('gulp-terser')
 
    //paths
-   src = '/src',
-   build = '/build';
+   src = 'src',
+   build = 'build';
 
 //HTML processing
 function html(){
@@ -46,7 +46,7 @@ function js(){
         src + '/js/**/*'
     ])
     .pipe(newer(out))
-    .pipe(concatgulp-terser('bundle.min.js'))
+    .pipe(concat('bundle.min.js'))
     .pipe(devBuild ? noop() : terser())
     .pipe(gulp.dest(out))
     .pipe(sync.stream());
@@ -61,14 +61,14 @@ function js(){
 function watch(done){
     sync.init({
         server: {
-            baseDir:'.' + build
+            baseDir:'./' + build
         }
     });
 
     //html changes 
     gulp.watch(src + '/html/**/*', html);
     //css changes
-    gulp.watch(src + '/css/**/*', css);
+    gulp.watch(src + '/scss/**/*', css);
     //js changes
     gulp.watch(src + '/js/**/*', js);
     //reload browser
