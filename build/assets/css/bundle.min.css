@@ -13209,35 +13209,35 @@ html {
 
 @font-face {
   font-family: 'Noto-Sans';
-  src: font("NosoSansHK/NotoSansHK-Thin.ttf") format("opentruetype");
+  src: url("/assets/fonts/NosoSansHK/NotoSansHK-Thin.ttf") format("opentruetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Noto-Sans';
-  src: font("NosoSansHK/NotoSansHK-Regular.ttf") format("opentruetype");
+  src: url("/assets/fonts/NosoSansHK/NotoSansHK-Regular.ttf") format("opentruetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Noto-Sans';
-  src: font("NosoSansHK/NotoSansHK-Light.ttf") format("opentruetype");
+  src: url("/assets/fonts/NosoSansHK/NotoSansHK-Light.ttf") format("opentruetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Noto-Sans';
-  src: font("NosoSansHK/NotoSansHK-Bold.ttf") format("opentruetype");
+  src: url("/assets/fonts/NosoSansHK/NotoSansHK-Bold.ttf") format("opentruetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Noto-Sans';
-  src: font("NosoSansHK/NotoSansHK-Black.ttf") format("opentruetype");
+  src: url("/assets/fonts/NosoSansHK/NotoSansHK-Black.ttf") format("opentruetype");
   font-weight: 900;
   font-style: normal;
 }
