@@ -11,11 +11,74 @@
     <title>Algebra Projekt</title>
   </head>
   <body>
-    
+    <!-- BEGIN MAIN NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient-black sticky-top">
+      <div class="container">
+              <a class="navbar-brand" href="#">
+                  Algebra
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link text-right" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-right" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-right" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-right" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
+                        </li>
+                      </ul>
+                </div>
+      </div>
+    </nav>
+    <!-- END MAIN NAVIGATION -->
 
+    <!-- BEGIN LOGIN MODAL -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <form id="loginForm">
+            <div class="modal-header">
+              <h5 class="modal-title">Sign in</h5>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="email">Email</label>
+                    <!-- for i id u inputu moraju biti isti-->
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                  <label for="pasword">Pasword</label>
+                  <input type="pasword" class="form-control" id="pasword" name="pasword" placeholder="Enter your pasword">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </form>
+      </div>
+    <!-- END LOGIN MODAL -->
+<!--napraviti za zadacu parsly validaciju
+modal za sign up>-->
     <!-- JavaScript -->
 
     <script src="/assets/js/bundle.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        App.init({
+         // homePage:true ---ostavljeno radi komentara u login.js
+         login:true
+        });
+      });
+    </script>
 
   </body>
 </html>
