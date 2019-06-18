@@ -12,3 +12,19 @@
         return data;
     }
 }) (jQuery);
+
+//metoda koja returna loader pri signinu
+let getLoader=function(){
+    let html = '';
+    //za svaku liniju koda html+= moramo napisat
+        html += '<div class="loader">';
+        html += '<img src="assets/images/loader.svg">';
+        html += '</div>';
+
+        return html;
+}
+let setAjaxMessage = function(message){
+    let html = '<div class="message">'+ message +'</div>';
+    //message stavljamo zasebno jer ga ubacujemo u loader kad ce nam bit potrebno
+    return html;
+}

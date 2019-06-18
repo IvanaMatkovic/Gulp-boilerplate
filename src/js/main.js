@@ -9,6 +9,7 @@ let App= function(){
         },
         initBase: function(options) {
             handleLogin(options);
+            handleRegister(options);
         }
     };
 }();
