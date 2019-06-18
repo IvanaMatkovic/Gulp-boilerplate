@@ -14,3 +14,6 @@ let handleLogin = function(options){
         }
     }
 };
+$(document).ready(function() {
+    $("form[name=registrationForm]").parsley();  
+  });

@@ -11,7 +11,6 @@
     <title>Algebra Projekt</title>
   </head>
   <body>
-<<<<<<< HEAD
     <!-- BEGIN MAIN NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient-black sticky-top">
       <div class="container">
@@ -33,6 +32,9 @@
                           <a class="nav-link text-right" href="#">Pricing</a>
                         </li>
                         <li class="nav-item">
+                          <a class="nav-link text-right" href="#" data-toggle="modal" data-target="#registrateModal">Registrate</a>
+                        </li>
+                        <li class="nav-item">
                           <a class="nav-link text-right" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
                         </li>
                       </ul>
@@ -40,9 +42,7 @@
       </div>
     </nav>
     <!-- END MAIN NAVIGATION -->
-=======
     <h1>Naslov</h1>
->>>>>>> 7b8827118e37713306cac8062398707a54dcd082
 
     <!-- BEGIN LOGIN MODAL -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
@@ -59,8 +59,8 @@
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
               </div>
               <div class="form-group">
-                  <label for="pasword">Pasword</label>
-                  <input type="pasword" class="form-control" id="pasword" name="pasword" placeholder="Enter your pasword">
+                  <label for="password">Pasword</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
                 </div>
             </div>
             <div class="modal-footer">
@@ -69,9 +69,37 @@
             </div>
         </form>
       </div>
+      </div>
+    </div>
     <!-- END LOGIN MODAL -->
-<!--napraviti za zadacu parsly validaciju
-modal za sign up>-->
+
+    <!-- BEGIN REGISTRATION MODAL -->
+  <div class="modal fade" id="registrateModal"  tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <form name="registrationForm" action="javascript:;" data-parsley-validate="true">
+          <div class="modal-header">
+            <h5 class="modal-title">Registrate</h5>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="text">Username:</label>
+              <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="pasword">Pasword</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" data-parsley-minlength="6" required>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Registrate</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+      </form>
+    </div>
+    </div>
+  </div>
+    <!-- END REGISTRATION MODAL -->
     <!-- JavaScript -->
 
     <script src="/assets/js/bundle.min.js"></script>
