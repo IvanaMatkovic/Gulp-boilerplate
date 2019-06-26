@@ -13351,3 +13351,60 @@ textarea.parsley-error {
 .bg-gradient-black {
   background: #000 linear-gradient(#000, #555);
 }
+
+.jumbotron {
+  background: transparent url("/assets/images/cat.jpg") no-repeat center center;
+  background-size: cover;
+  text-shadow: 0 0 5px #000;
+  color: #dee2e6;
+  border-radius: 0;
+}
+
+.home-page .subtitle {
+  position: relative;
+}
+
+.home-page .subtitle::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  right: 0;
+  transform: translateX(-50%);
+  bottom: -10px;
+  box-shadow: 5px 5px 15px #007bff;
+  border-radius: 50%;
+}
+
+.icon-box {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: solid 1px #007bff;
+  position: relative;
+}
+
+.icon-box i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.banner {
+  height: 467px;
+}
+
+.banner padding {
+  top: 80px;
+  bottom: 80px;
+}
+
+.banner.first {
+  background: transparent url("/assets/images/cat_banner1.jpg") no-repeat 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
