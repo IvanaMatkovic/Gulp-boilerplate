@@ -13353,6 +13353,7 @@ textarea.parsley-error {
 }
 
 .jumbotron {
+  height: 467px;
   background: transparent url("/assets/images/cat.jpg") no-repeat center center;
   background-size: cover;
   text-shadow: 0 0 5px #000;
@@ -13395,7 +13396,7 @@ textarea.parsley-error {
 }
 
 .banner {
-  height: 467px;
+  height: 800px;
 }
 
 .banner padding {
@@ -13405,6 +13406,12 @@ textarea.parsley-error {
 
 .banner.first {
   background: transparent url("/assets/images/cat_banner1.jpg") no-repeat 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner.second {
+  background: transparent url("/assets/images/cat_banner2.jpg") no-repeat 0 0;
   background-size: cover;
   background-attachment: fixed;
 }

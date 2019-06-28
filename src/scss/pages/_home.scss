@@ -36,7 +36,8 @@
 }
 
 .banner{
-    height:467px;
+    //height:467px;
+    height:800px;
     padding {
         top:80px;
         bottom:80px;
@@ -45,6 +46,12 @@
     &.first{
         //klasa banner ima i klas first, bez & bi bilo ako ima
         background: transparent image('cat_banner1.jpg') no-repeat 0 0;
+        background-size:cover;
+        background-attachment: fixed;
+    }
+    &.second{
+        //klasa banner ima i klas first, bez & bi bilo ako ima
+        background: transparent image('cat_banner2.jpg') no-repeat 0 0;
         background-size:cover;
         background-attachment: fixed;
     }

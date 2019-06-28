@@ -1,7 +1,9 @@
 .jumbotron{
+    height:467px;
     background: transparent image('cat.jpg') no-repeat center center;
     background-size:cover;
     text-shadow: 0 0 5px $black;
     color:$gray-300;
     @include border-radius(0);
 }
+
